@@ -173,6 +173,86 @@ function App() {
         <div class="z-20">03</div>
         <div class="z-10">02</div>
         <div class="z-0">01</div>
+
+        <h2>Flexbox & Grid &lt;&lt; Flex Basic</h2>
+        <hr/>
+        <div class="flex flex-row">
+          <div class="basis-1/4">01</div>
+          <div class="basis-1/4">02</div>
+          <div class="basis-1/2">03</div>
+        </div>
+        <div class="flex flex-row">
+          <div class="basis-1/4">01</div>
+          <div class="basis-1/4">02</div>
+          <div class="basis-1/2">03</div>
+        </div>
+        <div class="flex flex-row">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-col">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-col-reverse">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-nowrap">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-wrap">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-wrap-reverse">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-nowrap">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-wrap">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex flex-wrap-reverse">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        <div class="flex">
+          <div class="flex-none w-14 h-14">
+            01
+          </div>
+          <div class="flex-initial w-64">
+            02
+          </div>
+          <div class="flex-initial w-32">
+            03
+          </div>
+        </div>
+        <div class="flex">
+        <div class="flex-none ...">
+          01
+        </div>
+        <div class="flex-1 w-64 ...">
+          02
+        </div>
+        <div class="flex-1 w-32 ...">
+          03
+        </div>
+      </div>
       </div>
     </>
   )
