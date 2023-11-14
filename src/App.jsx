@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './custom.css';
-import './App.css'
+import './App.css';
+import CustomApp from './project1/app';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+    <CustomApp/>
+      {/* <div>
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <div className="container mx-auto px-4 py-4">Container</div>
         <iframe className="w-full aspect-video hover:aspect-square" src="https://youtu.be/dQw4w9WgXcQ"></iframe>
@@ -253,7 +255,7 @@ function App() {
           03
         </div>
       </div>
-      </div>
+      </div> */}
     </>
   )
 }
