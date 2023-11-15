@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-      <CustomApp/>
+      {/* <CustomApp/> */}
+      <header className="hover:text-[200px] py-[10px] font-[900] bg-primary sm:w-[100px] md:w-[200px] lg:w-[100%]">
+        header
+      </header>
       {/* <div>
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <div className="container mx-auto px-4 py-4">Container</div>

@@ -21,3 +21,12 @@ body{
     height: 200px;
     background-color: powderblue;
 }
+
+:root{
+    --primaryColor:orange;
+    --secondaryColor:yellow;
+}
+
+header{
+    background-color:var(--primaryColor);
+}
