@@ -7,9 +7,12 @@
 
 
 /* BELOW CODE FOR CUSTOM STYLESHEET */
+:root{
+    --ffPoppins: 'Poppins', sans-serif;
+}
 body{
     background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--ffPoppins);
 }
 
 
@@ -30,3 +33,22 @@ body{
 header{
     background-color:var(--primaryColor);
 }
+
+.card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+
+  .customBox{
+    @apply px-4 py-2 font-bold rounded  mt-[10px] mb-[20px] mr-[2px] bg-[orange] rounded-[5px];
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(/fonts/inter-var-latin.woff2) format("woff2");
+      }
+  }
