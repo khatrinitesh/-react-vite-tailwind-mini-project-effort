@@ -1,10 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import moment from "moment";
+
+const students = [
+  { name: "John Doe", age: 12 },
+  { name: "Jane Doe", age: 14 },
+];
+const locale = {
+  state: "Florida",
+  country: "USA",
+};
 
 export default function CustomApp() {
+  const [word, setWord] = useState(0);
+
   const data = [12, 3, 4, 5, 65, 6];
+  let currentDate = moment().format("Do MMMM YYYY, h:mm:ss a");
+  console.log(currentDate);
+
+  useEffect(() => {
+    async function getData() {
+      const result = await Promise.resolve("tested");
+      setWord(result);
+    }
+    getData();
+  }, []);
   return (
     <>
-      <ToDoList />
+      <h4 className="before:content-['♣'] ">{word}</h4>
+      <p className="before:content-['€']"></p>
+      Higher resolution means more than just a better-quality image. With a
+      Retina 6K display,{" "}
+      <a
+        className="font-bold after:content-['∀'] "
+        href="https://www.
+  apple.com/pro-display-xdr/"
+        target="_blank"
+      >
+        Pro Display XDR
+      </a>{" "}
+      gives you nearly 40 percent more screen real estate than a 5K display.
+      <Employees />
+      <hr />
+      {students.map((val, index) => {
+        return (
+          <div key={index}>
+            {val.name} - {val.age}
+          </div>
+        );
+      })}
+      {locale.state} - {locale.country}
+      {/* {locale.map((val, index) => {
+        return (
+          <div key={index}>
+            {val.state} {val.country}
+          </div>
+        );
+      })} */}
       <Profiler />
       {data.map((val, index) => {
         return (
@@ -173,10 +224,38 @@ export default function CustomApp() {
   );
 }
 
-function Profiler() {
+function Employees() {
+  const employees = [
+    { id: 1, name: "Alice", country: "Austria" },
+    { id: 2, name: "Bob", country: "Belgium" },
+    { id: 3, name: "Carl", country: "Canada" },
+  ];
+
+  const obj = {
+    id: 4,
+    name: "Dean",
+    country: "Denmark",
+  };
+  const date = new Date();
   return (
     <>
-      <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+      <h4>{date.toLocaleDateString()}</h4>
+      {JSON.stringify(employees)}
+      <br />
+      {JSON.stringify(obj)}
+      <div>
+        {employees.map((val, index) => {
+          return (
+            <div key={index}>
+              <h3>
+                {val.name} - {val.country}
+              </h3>
+            </div>
+          );
+        })}
+        <br />
+        {obj.name} - {obj.country}
+      </div>
     </>
   );
 }
@@ -190,19 +269,48 @@ const person = {
   listItem: [
     { id: 1, title: "Improve the videophone" },
     { id: 2, title: "Prepare aeronautics lectures" },
-    { id: 3, title: "Work on the alcohol-fuelled engine" },
+    { id: 3, title: "Work on the asdasds-fuelled engine" },
   ],
 };
 
-function ToDoList() {
+function Profiler() {
   return (
     <>
-      <div style={person.theme}>
-        <h3>{person.name}</h3>
-        <ul>
-          <li>{person.listItem.title}</li>
-        </ul>
-      </div>
+      <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+      <NestedObjectArray data={person} />
     </>
   );
 }
+
+const NestedObjectArray = ({ data }) => {
+  const renderList = (obj) => {
+    return (
+      <ul>
+        {Object.entries(obj).map(([key, value]) => (
+          <li key={key}>
+            <strong>{key}:</strong>
+            {Array.isArray(value) ? (
+              <ul>
+                {value.map((item, index) => (
+                  <li key={index}>
+                    {typeof item === "object" ? (
+                      <NestedObjectArray data={item} />
+                    ) : (
+                      item
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : typeof value === "object" ? (
+              renderList(value)
+            ) : (
+              value
+            )}
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
+  return <div>{renderList(data)}</div>;
+};
