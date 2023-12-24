@@ -2,20 +2,29 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#9e8af9",
-        textColor: "#e2e8f0",
+        primaryColor: "#ff0000",
+        secondaryColor: "#f7bc00",
+
       },
       fontFamily: {
-        allFonts: [
-          "Space Grotesk, -apple-system, BlinkMacSystemFont, avenir next,avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,arial, sans-serif",
-        ],
-        'poppins':["'Poppins', sans-serif"]
+        fontFamily: {
+          custom1:  ["Custom-1", "sans-serif"],
+        },
       },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
+      }
     },
     variants: {},
     screens: {

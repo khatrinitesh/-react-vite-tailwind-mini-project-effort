@@ -1,14 +1,13 @@
-import { useState } from "react";
-import "./custom.css";
-import CustomApp from "./components/conditional-rendering/3/app";
-import {NavLink} from 'react-router-dom';
+import React from "react";
+// import "./custom.css";
+import CustomApp from "./project2/app";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      {/* <CustomApp/> */}
+      <CustomApp/>
       {/* <header className="hover:text-[200px] py-[10px] font-[900] bg-primary sm:w-[100px] md:w-[200px] lg:w-[100%]">
         header
       </header> */}
@@ -809,7 +808,7 @@ function App() {
           nulla.
           <h1>headTitle</h1>
         </div> */}
-      <footer class="border-t border-gray-200 d-none">
+      {/* <footer class="border-t border-gray-200 d-none">
       <div
         class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between"
       >
@@ -1033,7 +1032,7 @@ function App() {
       <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
     </div>
   </div>
-</div>
+</div> */}
     </>
   );
 }

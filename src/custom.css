@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
 
 /* BELOW CODE FOR TAILWIND STYLESHEET */
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
 /* BELOW CODE FOR CUSTOM STYLESHEET */
-:root{
+/* :root{
     --ffPoppins: 'Poppins', sans-serif;
-}
+} */
 body{
     background-color: #f9f9f9;
-    font-family: var(--ffPoppins);
+    /* font-family: var(--ffPoppins); */
 }
 
 
@@ -40,15 +40,4 @@ header{
   
   .read-the-docs {
     color: #888;
-  }
-
-  .customBox{
-    @apply px-4 py-2 font-bold rounded  mt-[10px] mb-[20px] mr-[2px] bg-[orange] rounded-[5px];
-    @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 100 900;
-        font-display: optional;
-        src: url(/fonts/inter-var-latin.woff2) format("woff2");
-      }
   }
