@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 import React from "react";
 // import "./custom.css";
 import CustomApp from "./project2/app";
+=======
+import { useState } from "react";
+import "./custom.css";
+import { NavLink } from "react-router-dom";
+import CustomApp from "./TailwindCSS/1/App";
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <>
+<<<<<<< HEAD
       <CustomApp/>
+=======
+      <CustomApp />
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
       {/* <header className="hover:text-[200px] py-[10px] font-[900] bg-primary sm:w-[100px] md:w-[200px] lg:w-[100%]">
         header
       </header> */}
@@ -809,6 +820,7 @@ function App() {
           <h1>headTitle</h1>
         </div> */}
       {/* <footer class="border-t border-gray-200 d-none">
+<<<<<<< HEAD
       <div
         class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between"
       >
@@ -890,121 +902,140 @@ function App() {
               <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
+=======
+        <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto  lg:justify-between">
+          <div class="flex flex-wrap justify-center">
+            <ul class="flex items-center space-x-4">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+          <div class="flex justify-center mt-4 lg:mt-0">
+            <a>
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-300"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-pink-400"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </div>
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
         </div>
+      </footer>
+      <div class="bg-fixed h-[1200px] bg-hero-pattern bg-cover bg-center">
+        nmtes
       </div>
-    </footer>
-    <div class="bg-fixed h-[1200px] bg-hero-pattern bg-cover bg-center">
-          nmtes 
-        </div>
-        <div className="from-[#243c5a] h-[400px] bg-clip-padding"></div>
-        <div class="bg-clip-padding">
-  This element has a background image that is clipped to the border.
-</div>
-<div class="bg-clip-padding">
-  This element has a background image that is clipped to the padding box.
-</div>
-<div class="bg-clip-padding">
-  This element has a background image that is clipped to the content.
-</div>
-<div class="bg-clip-border md:bg-clip-content">
-  This element has a background image that is clipped to the border box by default, but starting
-  from the medium breakpoint and above, it changes to be clipped to the content box.
-</div>
-<button class="rounded-md">
-  element has a blue background
-</button>
-<div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">graident</div>
-<div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% border-8 border-indigo-600 border-t-4 border-b-4 ">Gradient is color</div>
-<div class="divide-y divide-slate-200 ...">
-  <div>01</div>
-  <div>02</div>
-  <div>03</div>
-</div>
-<div dir="ltr">
-  <div class="border-s-4">1</div>
-</div>
+      <div className="from-[#243c5a] h-[400px] bg-clip-padding"></div>
+      <div class="bg-clip-padding">
+        This element has a background image that is clipped to the border.
+      </div>
+      <div class="bg-clip-padding">
+        This element has a background image that is clipped to the padding box.
+      </div>
+      <div class="bg-clip-padding">
+        This element has a background image that is clipped to the content.
+      </div>
+      <div class="bg-clip-border md:bg-clip-content">
+        This element has a background image that is clipped to the border box by
+        default, but starting from the medium breakpoint and above, it changes
+        to be clipped to the content box.
+      </div>
+      <button class="rounded-md">element has a blue background</button>
+      <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        graident
+      </div>
+      <div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% border-8 border-indigo-600 border-t-4 border-b-4 ">
+        Gradient is color
+      </div>
+      <div class="divide-y divide-slate-200 ...">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <div dir="ltr">
+        <div class="border-s-4">1</div>
+      </div>
 
-<div dir="rtl">
-  <div class="border-s-4">1</div>
-  </div>
-  <button class="outline outline-offset-2 outline-1 ...">Button A</button>
-<button class="outline outline-offset-2 outline-2 ...">Button B</button>
-<button class="outline outline-offset-2 outline-4 ...">Button C</button>
-<button class="outline outline-offset-2 outline-blue-500 ...">Button A</button>
-<button class="outline outline-offset-2 outline-cyan-500 ...">Button B</button>
-<button class="outline outline-offset-2 outline-pink-500 ...">Button C</button>
-<button class="outline-2 outline-blue-500/50 ...">Save Changes</button>
-<span class="shadow-slate-50">Shadow Slate 50</span>
-<span class="shadow-slate-100">Shadow Slate 50</span>
-<span class="shadow-slate-200">Shadow Slate 50</span>
-<button class="bg-indigo-500 opacity-100"></button>
-<button class="bg-indigo-500 opacity-75"></button>
-<button class="bg-indigo-500 opacity-50"></button>
-<button class="bg-indigo-500 opacity-25"></button>
-<div class="flex justify-center -space-x-14">
-  <div class="mix-blend-multiply bg-blue-400 ..."></div>
-  <div class="mix-blend-multiply bg-pink-400 ..."></div>
-  <div class="blur-2xl">
-    <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=320&h=320&q=80"/>
-  </div>
-  <table class="table-auto">
-  <thead>
-    <tr>
-      <th>Song</th>
-      <th>Artist</th>
-      <th>Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-      <td>Malcolm Lockyer</td>
-      <td>1961</td>
-    </tr>
-    <tr>
-      <td>Witchy Woman</td>
-      <td>The Eagles</td>
-      <td>1972</td>
-    </tr>
-    <tr>
-      <td>Shining Star</td>
-      <td>Earth, Wind, and Fire</td>
-      <td>1975</td>
-    </tr>
-  </tbody>
-</table>
-<table>
-  <caption class="caption-top">
-    Table 3.1: Professional wrestlers and their signature moves.
-  </caption>
-  <thead>
-    <tr>
-      <th>Wrestler</th>
-      <th>Signature Move(s)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>"Stone Cold" Steve Austin</td>
-      <td>Stone Cold Stunner, Lou Thesz Press</td>
-    </tr>
-    <tr>
-      <td>Bret "The Hitman" Hart</td>
-      <td >The Sharpshooter</td>
-    </tr>
-    <tr>
-      <td>Razor Ramon</td>
-      <td>Razor's Edge, Fallaway Slam</td>
-    </tr>
-  </tbody>
-</table>
-<img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=320&h=320&q=80" alt="" className="w-24 h-24 object-cover rounded-lg shadow-xl" />
-</div>
-<div class="divide-y divide-dashed">
-            <div>01</div>
-            <div>02</div>
-            <div>03</div>
+      <div dir="rtl">
+        <div class="border-s-4">1</div>
+      </div>
+      <button class="outline outline-offset-2 outline-1 ...">Button A</button>
+      <button class="outline outline-offset-2 outline-2 ...">Button B</button>
+      <button class="outline outline-offset-2 outline-4 ...">Button C</button>
+      <button class="outline outline-offset-2 outline-blue-500 ...">
+        Button A
+      </button>
+      <button class="outline outline-offset-2 outline-cyan-500 ...">
+        Button B
+      </button>
+      <button class="outline outline-offset-2 outline-pink-500 ...">
+        Button C
+      </button>
+      <button class="outline-2 outline-blue-500/50 ...">Save Changes</button>
+      <span class="shadow-slate-50">Shadow Slate 50</span>
+      <span class="shadow-slate-100">Shadow Slate 50</span>
+      <span class="shadow-slate-200">Shadow Slate 50</span>
+      <button class="bg-indigo-500 opacity-100"></button>
+      <button class="bg-indigo-500 opacity-75"></button>
+      <button class="bg-indigo-500 opacity-50"></button>
+      <button class="bg-indigo-500 opacity-25"></button>
+      <div class="flex justify-center -space-x-14">
+        <div class="mix-blend-multiply bg-blue-400 ..."></div>
+        <div class="mix-blend-multiply bg-pink-400 ..."></div>
+        <div class="blur-2xl">
+          <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=320&h=320&q=80" />
         </div>
+<<<<<<< HEAD
         <button class="transition duration-150 ease-in-out ...">Button A</button>
         <button class="transition duration-300 ease-in-out ...">Button B</button>
         <button class="transition duration-700 ease-in-out ...">Button C</button>
@@ -1033,6 +1064,113 @@ function App() {
     </div>
   </div>
 </div> */}
+=======
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+              <td>Malcolm Lockyer</td>
+              <td>1961</td>
+            </tr>
+            <tr>
+              <td>Witchy Woman</td>
+              <td>The Eagles</td>
+              <td>1972</td>
+            </tr>
+            <tr>
+              <td>Shining Star</td>
+              <td>Earth, Wind, and Fire</td>
+              <td>1975</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <caption class="caption-top">
+            Table 3.1: Professional wrestlers and their signature moves.
+          </caption>
+          <thead>
+            <tr>
+              <th>Wrestler</th>
+              <th>Signature Move(s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>"Stone Cold" Steve Austin</td>
+              <td>Stone Cold Stunner, Lou Thesz Press</td>
+            </tr>
+            <tr>
+              <td>Bret "The Hitman" Hart</td>
+              <td>The Sharpshooter</td>
+            </tr>
+            <tr>
+              <td>Razor Ramon</td>
+              <td>Razor's Edge, Fallaway Slam</td>
+            </tr>
+          </tbody>
+        </table>
+        <img
+          src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=320&h=320&q=80"
+          alt=""
+          className="w-24 h-24 object-cover rounded-lg shadow-xl"
+        />
+      </div>
+      <div class="divide-y divide-dashed">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+      <button class="transition duration-150 ease-in-out ...">Button A</button>
+      <button class="transition duration-300 ease-in-out ...">Button B</button>
+      <button class="transition duration-700 ease-in-out ...">Button C</button>
+      <button class="ease-in duration-300">Button A</button>
+      <button class="ease-out duration-300">Button B</button>
+      <button class="ease-in-out duration-300">Button C</button>
+      <button type="button" class="cursor-pointer ">
+        Submit
+      </button>
+      <button type="button" class="cursor-progress ">
+        Saving
+      </button>
+      <button type="button" disabled class="cursor-not-allowed ...">
+        Confirm
+      </button>
+      <textarea class="caret-blue-500 focus:caret-indigo-500"></textarea>
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img
+              class="h-48 w-full object-cover md:h-full md:w-48"
+              src="/img/building.jpg"
+              alt="Modern building architecture"
+            />
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+              Company retreats
+            </div>
+            <a
+              href="#"
+              class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >
+              Incredible accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">
+              Looking to take your team away on a retreat to enjoy awesome food
+              and take in some sunshine? We have a list of places to do just
+              that.
+            </p>
+          </div>
+        </div>
+      </div> */}
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
     </>
   );
 }

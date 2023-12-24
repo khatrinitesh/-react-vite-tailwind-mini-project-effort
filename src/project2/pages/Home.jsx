@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 export default function Home() {
@@ -83,3 +84,12 @@ export default function Home() {
     </div>
   )
 }
+=======
+import React from "react";
+
+const Home = () => {
+  return <div>Home</div>;
+};
+
+export default Home;
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80

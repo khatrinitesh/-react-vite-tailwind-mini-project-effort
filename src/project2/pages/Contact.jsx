@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Outlet,NavLink } from 'react-router-dom';
 
@@ -11,3 +12,12 @@ export default function Contact() {
     </div>
   )
 }
+=======
+import React from "react";
+
+const Contact = () => {
+  return <div>Contact</div>;
+};
+
+export default Contact;
+>>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
