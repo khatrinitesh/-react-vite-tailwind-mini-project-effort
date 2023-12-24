@@ -1,13 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-<<<<<<< HEAD
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-=======
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
->>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
   theme: {
     extend: {
       colors: {
@@ -16,16 +9,10 @@ export default {
 
       },
       fontFamily: {
-<<<<<<< HEAD
-        fontFamily: {
-          custom1:  ["Custom-1", "sans-serif"],
-        },
-=======
         allFonts: [
           "Space Grotesk, -apple-system, BlinkMacSystemFont, avenir next,avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,arial, sans-serif",
         ],
         poppins: ["'Poppins', sans-serif"],
->>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
       },
       fontSize: {
         sm: '0.8rem',

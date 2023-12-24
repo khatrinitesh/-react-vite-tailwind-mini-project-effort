@@ -6,21 +6,12 @@
 @tailwind utilities; */
 
 /* BELOW CODE FOR CUSTOM STYLESHEET */
-<<<<<<< HEAD
-/* :root{
-    --ffPoppins: 'Poppins', sans-serif;
-} */
-body{
-    background-color: #f9f9f9;
-    /* font-family: var(--ffPoppins); */
-=======
 :root {
   --ffPoppins: "Poppins", sans-serif;
 }
 body {
   background-color: #f9f9f9;
   /* font-family: var(--ffPoppins); */
->>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
 }
 
 .textDec {
@@ -49,14 +40,6 @@ header {
 }
 
 .card {
-<<<<<<< HEAD
-    padding: 2em;
-  }
-  
-  .read-the-docs {
-    color: #888;
-  }
-=======
   padding: 2em;
 }
 
@@ -74,4 +57,3 @@ header {
     src: url(/fonts/inter-var-latin.woff2) format("woff2");
   }
 }
->>>>>>> ebb224036cd95f0a07d3671d69bb0b8e70c79d80
