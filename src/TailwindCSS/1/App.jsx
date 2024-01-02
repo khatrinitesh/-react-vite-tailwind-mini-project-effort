@@ -26,6 +26,7 @@ export default function CustomApp() {
   }, []);
   return (
     <>
+      <div class="bg-primarygradient h-96"></div>
       <h4 className="before:content-['♣'] ">{word}</h4>
       <p className="before:content-['€']"></p>
       Higher resolution means more than just a better-quality image. With a

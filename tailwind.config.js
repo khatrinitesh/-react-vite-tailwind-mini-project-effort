@@ -53,6 +53,7 @@ export default {
       "gradient-to-bl": "linear-gradient(cyan,red,lightblue)",
       "gradient-to-l": "linear-gradient(red,powderblue)",
       "gradient-to-tl": "linear-gradient(blue,silver,pink)",
+      "primarygradient":"linear-gradient(to right, #6244b4, #6344b4, #6444b4, #6545b4, #6645b4, #6745b4, #6946b4, #6a46b4, #6c46b4, #6f47b4, #7147b4, #7348b4)"
     },
   },
   plugins: [],
