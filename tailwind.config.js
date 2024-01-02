@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#9e8af9",
-        textColor: "#e2e8f0",
+        primaryColor: "#ff0000",
+        secondaryColor: "#f7bc00",
+
       },
       fontFamily: {
         allFonts: [
@@ -13,6 +14,15 @@ export default {
         ],
         poppins: ["'Poppins', sans-serif"],
       },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
+      }
     },
     variants: {},
     screens: {
